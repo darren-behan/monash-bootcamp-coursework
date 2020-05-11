@@ -1,0 +1,40 @@
+body {
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  background-color: #eee;
+  width: 250px;
+  height: 150px;
+  top: 0px;
+  left: 0px;
+}
+
+.main-section {
+  margin: 0px 200px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+.relative {
+  background-color: #eee;
+  height: 250px;
+  position: relative;
+}
+
+.absolute {
+  background-color: #999;
+  position: absolute;
+  width: 450px;
+  height: 150px;
+  bottom: 0px;
+  right: -30px;
+}
