@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+  <script text="text/javascript">
+
+    var computerChoices = ["r", "p", "s"];
+    var userWins = 0;
+    var userLosses = 0;
+    var draws = 0;
+
+    for (var i = 0; i < 10; i++) {
+      var userInput = prompt("Enter 'r', 'p' or 's' to play!");
+      console.log(userInput);
+
+      var computerGuess = computerChoices[Math.floor(Math.random() * 3) * computerChoices.length];
+      console.log(computerGuess);
+
+      if (userInput === computerChoice) {
+        console.log("It's a draw!")
+        draws++
+      } else if (
+        userInput === 'r' && computerGuess === 's' ||
+        userInput === 's' && computerGuess === 'p' ||
+        userInput === 'p' && computerGuess === 'r') {
+        console.log("User wins!")
+        userWins++
+      } else {
+        console.log("User loses!")
+        userLosses++
+      };
+    };
+
+    console.log("User wins: " + userWins + ". User losses: " + userLosses + ". Draws: " + draws);
+
+  </script>
+</body>
+</html>

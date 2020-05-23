@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steak</title>
+</head>
+<body>
+  <script>
+
+    var confirmSteak = confirm("Do you eat steak?");
+    var promptYear = prompt("What year were you born?");
+    var personAge = 2020 - promptYear;
+
+    if (confirmSteak) {
+      alert("Here's a Steak Sandwich!")
+    } else {
+      alert("Here's a Tofu Stir-Fry!")
+    };
+
+    if (personAge < 21) {
+      alert("No Sake for you!")
+    } else {
+      alert("You get Sake!")
+    };
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-family: 'Parisienne', cursive;
+}
+
+.thought1 {
+  font-family: 'Unica One', cursive;
+}
+
+.thought2 {
+  font-family: 'Covered By Your Grace', cursive;
+}
+
+.thought3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+  /* font-family: 'Balsamiq Sans', cursive; */
+  font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,29 @@
+button:hover {
+  background-color: purple;
+}
+
+button:focus {
+  color: green;
+}
+
+button:active {
+  color: white;
+}
+
+p:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:focus {
+  color: green;
+}
+
+a:active {
+  color: blue;
+}

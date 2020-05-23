@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Bands</title>
+</head>
+<body>
+
+  <h1>My Favorite Band</h1>
+  <h3>Refresh page to see if your favorite band is the same as mine!</h3>
+  
+  <script>
+
+    var favoriteBands = ["the dubliners", "avicii", "oasis"];
+
+    var promptFavoriteBand = prompt("What is your favorite band?");
+
+    if (favoriteBands.indexOf(promptFavoriteBand.toLowerCase()) === -1) {
+      alert("Nah. " + promptFavoriteBand + " are pretty lame.")
+    } else {
+      alert("YEAH I LOVE " + promptFavoriteBand.toUpperCase() + "!")
+    };
+
+  </script>
+
+</body>
+</html>

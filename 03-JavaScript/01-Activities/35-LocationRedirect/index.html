@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      if (window.navigator.userAgent.indexOf("Mac") != -1) {
+        alert((OSName = "Welcome, Mac user!!"));
+      } else if (window.navigator.userAgent.indexOf("Win") != -1) {
+        alert((OSName = "Welcome, Windows user!!"));
+      };
+
+      window.navigator.geolocation.getCurrentPosition (
+        function (position) {
+          alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);
+
+          window.location.replace("https://postman-echo.com/get?coordinates=" + position.coords.latitude + "," + position.coords.longitude)
+        }
+      );
+    </script>
+  </body>
+</html>
