@@ -51,8 +51,15 @@ The following topics are covered in this unit:
 ## Comprehension Check
 You will be employer-ready if you can answer the following questions:
 1. What are five fundamental concepts of programming?
+  * Variables.
+  * Control Structures.
+  * Data Structures.
+  * Syntax.
+  * Tools.
 2. What are objects in JavaScript and why are they important?
+  * An object is a collection of related data and/or functionality (which usually consists of several variables and functions — which are called properties and methods when they are inside objects.)
 3. What is a function?
+  * A function is reusable piece of code. Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.
 
 
 ## Learning Objectives
