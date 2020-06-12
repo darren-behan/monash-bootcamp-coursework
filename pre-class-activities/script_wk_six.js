@@ -13,5 +13,13 @@ function averageNum () {
   console.log(average);
 }
 
-// instructors solution
+var sample = function(){
+  var a = b = 3;
+  console.log(a);
+  console.log(b);
+}
+sample();
+
+console.log("Is a defined?", typeof a !== undefined);
+console.log("Is b defined?", typeof b !== undefined);
 

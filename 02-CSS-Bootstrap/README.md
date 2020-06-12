@@ -29,8 +29,13 @@ The following topics will be covered in this unit:
 You will be employer-ready if you can answer the following questions:
 
 1. What is a CDN?
+  * Content Delivery Network - This is a geographically distributed group of servers that work together to provide fast delivery of Internet content
 2. What is a CSS framework?
+  * Bootstrap
 3. What are three benefits of using a CSS framework?
+  * Allows us to style a web app seamlessly
+  * Frameworks handle complex styling such as floats & media queries
+  * Frameworks ensures consistency
 
 ## Learning Objectives
 

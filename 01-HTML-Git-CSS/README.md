@@ -48,8 +48,11 @@ The following topics will be covered in this unit:
 You will be employer-ready if you can answer the following questions:
 
 1. What does it mean to be a full-stack web developer?
+  * A full stack developer can build a dynamic app using front-end and back-end technologies
 2. What is the relationship between HTML and CSS?
+  * HTML structures the page whit CSS styling and positioning elements
 3. What is Git workflow?
+  * GIT workflow allows developers to utilise version control so everyone can see the most up to date code at all times. It avoids over riding code a current developer may be working on and is an easy way for developers to pair on code.
 
 ## Learning Objectives
 
