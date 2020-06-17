@@ -23,3 +23,18 @@ sample();
 console.log("Is a defined?", typeof a !== undefined);
 console.log("Is b defined?", typeof b !== undefined);
 
+// Function that takes in an input and returns true if it's an integer and false otherwise
+
+function solution(input) {
+  // use typeof and compare to number(integer) => not correct
+  var type = typeof input;
+  console.log('way 1: ', type === "number");
+  // Number.isInteger => correct
+  console.log('way 2: ', Number.isInteger(input));
+  // parseInt => compare result => correct
+  console.log('way 3: ', parseInt(input) === input);
+}
+
+solution(7);
+solution("7");
+solution(4.3);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Example queryURL for Giphy API
+    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response.data[0].embed_url);
+      var div = $("<div>" + response.data[0].embed_url + "</div>");
+      var div = $("href", response.data[0].embed_url)
+      var body = $("<body>");
+        $("body").append(div);
+    });
+  </script>
+
+<!-- - Have a look at Activity 4 HTML file -->
+<!-- - Research how Giphy API is being used -->
+<!-- - Try to manipulate the API call to gather different result (different images, different age range,...) -->
+
+</body>
+
+</html>
