@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div style="margin: 32px auto; width: 800px; border: solid 1px lightgrey; border-radius: 4px; padding: 20px;">
+        <h1 style="text-align: center;"><i class="fas fa-fire"></i> Hot Restaurant</h1>
+        <hr>
+        <h2 style="text-align: center;">We only have 5 tables! Book your seat before they are all gone!</h2>
+        <div style="margin: 40px auto; width: 310px;">
+            <a href="/tables"><button type="button" class="table btn btn-primary"><i class="far fa-list-alt"></i> View Tables</button></a>
+            <a href="/reserve"><button type="button" class="reserve btn btn-danger"><i class="far fa-calendar-alt"></i> Make Reservation</button></a>
+        </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(".table").on("click", function() {
+    
+          // Using a RegEx Pattern to remove spaces from searchedCharacter
+          // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+        //   searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+    
+          $.get("/tables", function(data) {
+            console.log(data);
+
+          });
+        });
+    
+      </script>
+</body>
+</html>

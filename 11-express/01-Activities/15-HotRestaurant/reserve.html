@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div style="margin: 32px auto; width: 800px; border: solid 1px lightgrey; border-radius: 4px; padding: 20px;">
+        <h1 style="text-align: center;"><i class="fas fa-fire"></i> Hot Restaurant</h1>
+        <hr>
+        <h2 style="text-align: center;">Make your Reservation</h2>
+        <div style="margin: 40px auto; width: 190px;">
+            <a href="/tables"><button type="button" class="btn btn-primary table"><i class="far fa-list-alt"></i> View Tables</button></a>
+            <a href="/" style="margin-left: 16px;"><i class="fas fa-home"></i></a>
+        </div>
+    </div>
+
+    <ul style="width: 800px; margin: 32px auto;" class="list-group">
+        <li style="background-color: #EDEDED; font-weight: semi-bold;" class="list-group-item">Table Reservations</li>
+        <li style="padding: 16px;" class="list-group-item">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input name="name" type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" id="number">
+            </div>
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="id" class="form-control" id="id">
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </li>
+      </ul>
+
+      <div style="width: 800px; margin: 16px auto; padding: 16px;">
+        <p style="margin-bottom: 16px;">Control Panel</p>
+        <a>API Table Link</a>
+        <a>API Wait List</a>
+      </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $("#submit").on("click", function() {
+            event.preventDefault();
+            const personA = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                number: $("#number").val(),
+                id: $("#id").val()
+            }
+          $.post("/reserve", personA)
+            .then(function(data) {
+            console.log("/reserve", data);
+            alert("Adding reservation...");
+            });
+        });
+    
+      </script>
+</body>
+</html>
