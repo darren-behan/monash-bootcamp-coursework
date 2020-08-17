@@ -14,6 +14,9 @@ if (config.use_env_variable) {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+// Reads all model files
+// Adds them one object => db
+// db contains sequelize connection, Sequelize class, & all models within the models folder
 fs
   .readdirSync(__dirname)
   .filter(function(file) {
@@ -21,7 +24,7 @@ fs
   })
   .forEach(function(file) {
     var model = sequelize['import'](path.join(__dirname, file));
-    db[model.name] = model;
+    db[model.name] = model; // [model.name] is retrieved from the model file => it is after sequelize.define('[model.name]')
   });
 
 Object.keys(db).forEach(function(modelName) {
